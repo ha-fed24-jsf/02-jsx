@@ -1,20 +1,19 @@
 import './App.css'
-
-const x = 2
-const y = 10
+import Time from './Time.jsx'
+import Calculate from './Calculate.jsx'
+import FancyButton from './FancyButton.jsx'
 
 function App() {
-	let now = new Date()
-	let hour = now.getHours()
-	let min = now.getMinutes()
-	let sec = now.getSeconds()
 	return (
 		<main>
 			<h1> Hello world </h1>
-			<p className="exciting"> Min första riktiga React-app. </p>
+			<p class="exciting"> Min första riktiga React-app. </p>
 			<p> Det kommer snabbt bli mer intressant. </p>
-			<p> x + y = {x + y} </p>
-			<p> Klockan är {hour}:{min}:{sec}. </p>
+
+			<FancyButton text={'ett'} />
+			<FancyButton text={'två'} />
+			<Calculate />
+			<Time />
 		</main>
 	)
 }
